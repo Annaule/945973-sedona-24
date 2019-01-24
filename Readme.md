@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Anna](https://up.htmlacademy.ru/htmlcss/24/user/945973).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Котов] (https://htmlacademy.ru/profile/id25083).
+
 
 ---
 
