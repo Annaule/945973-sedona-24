@@ -7,7 +7,7 @@
   <body>
 <header class="main-header">
     <a class="main-header-logo" href="index.html">
-    <img src="img/logo.svg" alt="Логотип штата" width="" height="">
+    <img src="img/logo-sedona.svg" alt="Логотип штата" width="" height="">
   </a>
   <nav class="main-navigation">
     <ul>
@@ -21,11 +21,11 @@
 <main>
   <aticle class="Sedona-welcome">
 <p>
-    <img src="img/welcome.png" width="" height="" alt="Приветствие">
+    <img src="img/welcome.png" width="" height=""
+    alt="Приветствие: Welcome to the gorgeous Sedona Because the grand Canyon sucks">
     <img src="img/background-photo.jpg" width="" height="" alt="Фото Седоны">
-    <img src="img/polygon.svg" idth="" height="" alt="Полигон">
+    <img src="img/polygon.svg" idth="" height="" alt="Полигон декоративный элемент">
 </p>
-    <!--<h1 class="sedona-title">Sedona </h1> !-->
   </article>
   <section class="Sedona-adventages">
     <h2 class="visually-hidden">Преимущества города Седона</h2>
@@ -78,37 +78,43 @@
        и толпится там</p>
      </li>
   </section>
+
   <section class="hotels-search">
     <p class="section-title">Заинтерисовались?</p>
     <p class="sedona-text-black">Укажите предполагаемые даты поездки,
-и мы покажем вам лучшие предложения гостиниц в седоне</p>
-<!-- тут будет форма!-->
-<h2>ПОИСК ГОСТИНИЦЫ В седоне</h2>
-<img src="img/mapofsedona.jpg" width="" height="" alt="Карта Седоны">
+     и мы покажем вам лучшие предложения гостиниц в седоне</p>
+<img src="img/mapofsedona.jpg" width="" height="" alt="Карта города Седона">
+
+<form class="hotels-search" method="post" action="https://echo.htmlacademy.ru">
+<legend>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</legend>
+<fieldset>
 <label for="arrival-date">Дата заезда:</label>
-<input type="date" name="dateofaarival" id="arrival-date"><br>
+    <input type="date" name="dateofaarival" id="arrival-date"><br>
 <label for="departure-date">Дата выезда:</label>
-<input type="date" name="dateofdeparture" id="departure-date"><br>
+    <input type="date" name="dateofdeparture" id="departure-date"><br>
 <label for="adults">Взрослые:</label>
-<input type="range" min="1" max="20" name="numberofadults" id="adults">
+    <input type="range" min="1" max="20" name="numberofadults" id="adults">
 <label for="childrens">Дети:</label>
-<input type="range" min="0" max="20" name="numberofchildrens" id="childrens"><br>
-<input type="submit" value="Найти" name="search">
+    <input type="range" min="0" max="20" name="numberofchildrens" id="childrens"><br>
+  <input type="submit" value="Найти" name="search">
+</fieldset>
+</form>
   </section>
 </main>
 <footer class="main-footer">
   <p class="hashtag">#visitSEDONA</p>
-  <div class="social-buttons">
+  <div class="social-buttons" background-color="black">
     <ul>
-      <li><a class="social-button" href="#">
-        <img src="img/fb-icon.svg" width="" height="" alt="Фейсбук"/></a></li>
-      <li><a class="social-button" href="#">
-        <img src="img/twitter.svg" width="" height="" alt="Твитер"/></a></li>
-      <li><a class="social-button" href="#">
-        <img src="img/youtube.svg" width="" height="" alt="Ютюб"/></a></li>
+      <li><a class="social-button" href="#" style="background-color:#81b3d2" aria-label="Седона на фэйсбуке">
+        <img src="img/fb-icon.svg" width="" height="" alt="иконка фейсбука"/></a></li>
+      <li><a class="social-button" href="#" style="background-color:#81b3d2" aria-label="Седона в твитере">
+        <img src="img/twitter.svg" width="" height="" alt="иконка твитера"/></a></li>
+      <li><a class="social-button" href="#" style="background-color:#81b3d2" aria-label="Седона на ютюбе">
+        <img src="img/youtube.svg" width="" height="" alt="иконка ютюба"/></a></li>
     </ul>
     <p class="footer-copyright">
-     <b>Website by:</b> <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
+     <b>Website by:</b> <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"
+     aria-label="ссылка для перехода на страницу HTML академии">
        <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="" height="">
      </a>
    </p>
