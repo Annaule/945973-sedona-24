@@ -14,7 +14,7 @@
       <li><a href="info.html">Информация</a></li>
       <li><a href="photo.html"> Фото и видео</a></li>
       <li><a href="map.html"> Карта штата</a></li>
-      <li><a href="hotels.html">Гостиницы</a></li>
+      <li><a href="catalog.html">Гостиницы</a></li>
     </ul>
   </nav>
 </header>
@@ -89,13 +89,24 @@
 <legend>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</legend>
 <fieldset>
 <label for="arrival-date">Дата заезда:</label>
-    <input type="date" name="dateofaarival" id="arrival-date"><br>
+<div id="input_container">
+    <input type="date" name="dateofaarival" id="arrival-date" value="24 апреля 2017">
+    <img src="img/calendar.svg">
+</div>
+    <br>
 <label for="departure-date">Дата выезда:</label>
-    <input type="date" name="dateofdeparture" id="departure-date"><br>
-<label for="adults">Взрослые:</label>
-    <input type="range" min="1" max="20" name="numberofadults" id="adults">
-<label for="childrens">Дети:</label>
-    <input type="range" min="0" max="20" name="numberofchildrens" id="childrens"><br>
+    <input type="date" name="dateofdeparture" id="departure-date" value="4 июля 2017"><br>
+<label>Взрослые:
+    <input type="button" value="-" name="adultsminuscount">
+    <input type="text" name="numberofadults" width="5px">
+    <input type="button" value="+" name="adultspluscount">
+</label>
+<label>Дети:
+    <input type="button" value="-" name="childrensminuscount">
+    <input type="text" name="numberofchildrens">
+    <input type="button" value="+" name="childrensspluscount">
+</label>
+<br>
   <input type="submit" value="Найти" name="search">
 </fieldset>
 </form>
