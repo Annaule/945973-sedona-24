@@ -3,17 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic"
+    rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 <header class="main-header">
     <a class="main-header-logo" href="index.html">
-    <img src="img/logo-sedona.svg" alt="Логотип штата" width="" height="">
+    <img src="img/logo-sedona.svg" alt="Логотип штата" width="150px" height="71px">
   </a>
   <nav class="main-navigation">
-    <ul>
+    <ul class="site-navigation">
       <li><a href="info.html">Информация</a></li>
       <li><a href="photo.html"> Фото и видео</a></li>
-      <li><a href="map.html"> Карта штата</a></li>
+      <li><a href="#mapofsedona"> Карта штата</a></li>
       <li><a href="catalog.html">Гостиницы</a></li>
     </ul>
   </nav>
@@ -21,10 +25,10 @@
 <main>
   <aticle class="Sedona-welcome">
 <p>
-    <img src="img/welcome.png" width="" height=""
+    <img src="img/welcome.png" width="459px" height="353px"
     alt="Приветствие: Welcome to the gorgeous Sedona Because the grand Canyon sucks">
-    <img src="img/background-photo.jpg" width="" height="" alt="Фото Седоны">
-    <img src="img/polygon.svg" idth="" height="" alt="Полигон декоративный элемент">
+    <img src="img/background-photo.jpg" width="1200px" height="800px" alt="Фото Седоны">
+    <img src="img/polygon.svg" width="1201px" height="59px" alt="Полигон декоративный элемент">
 </p>
   </article>
   <section class="Sedona-adventages">
@@ -80,53 +84,62 @@
   </section>
 
   <section class="hotels-search">
-    <p class="section-title">Заинтерисовались?</p>
+    <h3 class="section-title">Заинтерисовались?</h3>
     <p class="sedona-text-black">Укажите предполагаемые даты поездки,
      и мы покажем вам лучшие предложения гостиниц в седоне</p>
-<img src="img/mapofsedona.jpg" width="" height="" alt="Карта города Седона">
-
+<button type="submit" class="search-form-name">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
 <form class="hotels-search" method="post" action="https://echo.htmlacademy.ru">
-<legend>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</legend>
 <fieldset>
-<label for="arrival-date">Дата заезда:</label>
-<div id="input_container">
-    <input type="date" name="dateofaarival" id="arrival-date" value="24 апреля 2017">
-    <img src="img/calendar.svg">
-</div>
-    <br>
-<label for="departure-date">Дата выезда:</label>
-    <input type="date" name="dateofdeparture" id="departure-date" value="4 июля 2017"><br>
-<label>Взрослые:
-    <input type="button" value="-" name="adultsminuscount">
-    <input type="text" name="numberofadults" width="5px">
-    <input type="button" value="+" name="adultspluscount">
-</label>
-<label>Дети:
-    <input type="button" value="-" name="childrensminuscount">
+<p class="date-item">
+  <label for="arrival-date">Дата заезда:</label>
+    <input type="text" name="dateofaarival" id="arrival-date" value="24 апреля 2017">
+    <button class="calendar-button"> <img src="img/calendar.svg" width="21px" heigh="22px"
+      alt="иконка календаря">
+    </button>
+</p> <br>
+<p class="date-item">
+  <label for="departure-date">Дата выезда:</label>
+    <input type="text" name="dateofdeparture" id="departure-date" value="4 июля 2017">
+    <button class="calendar-button"> <img src="img/calendar.svg" width="21px" heigh="22px"
+      alt="иконка календаря">
+    </button>
+</p> <br>
+<p class="visitors-count">
+  <label>Взрослые:
+    <button type="submit" name="adultsminuscount">-</button>
+    <input type="text" name="numberofadults">
+    <button type="submit" name="adultspluscount">+</button>
+  </label>
+  <label>Дети:
+    <button type="submit" name="childrensminuscount">-</button>
     <input type="text" name="numberofchildrens">
-    <input type="button" value="+" name="childrensspluscount">
-</label>
+    <button type="submit" name="childrensspluscount">+</button>
+  </label>
+</p>
 <br>
-  <input type="submit" value="Найти" name="search">
+  <button class="hotels-search-button" type="submit">Найти</button>
 </fieldset>
 </form>
+  </section>
+  <section class="mapofsedona">
+    <img src="img/mapofsedona.jpg" width="1200" height="593" alt="Карта города Седона">
   </section>
 </main>
 <footer class="main-footer">
   <p class="hashtag">#visitSEDONA</p>
   <div class="social-buttons" background-color="black">
     <ul>
-      <li><a class="social-button" href="#" style="background-color:#81b3d2" aria-label="Седона на фэйсбуке">
-        <img src="img/fb-icon.svg" width="" height="" alt="иконка фейсбука"/></a></li>
+      <li><a class="social-button" href="#" aria-label="Седона на фэйсбуке">
+        <img src="img/fb-icon.svg" width="12px" height="22px" alt="иконка фейсбука"/></a></li>
       <li><a class="social-button" href="#" style="background-color:#81b3d2" aria-label="Седона в твитере">
-        <img src="img/twitter.svg" width="" height="" alt="иконка твитера"/></a></li>
+        <img src="img/twitter.svg" width="17px" height="15px" alt="иконка твитера"/></a></li>
       <li><a class="social-button" href="#" style="background-color:#81b3d2" aria-label="Седона на ютюбе">
-        <img src="img/youtube.svg" width="" height="" alt="иконка ютюба"/></a></li>
+        <img src="img/youtube.svg" width="20px" height="16px" alt="иконка ютюба"/></a></li>
     </ul>
     <p class="footer-copyright">
-     <b>Website by:</b> <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"
+     <b>Website by:</b> <a class="logo-button" href="https://htmlacademy.ru/intensive/htmlcss"
      aria-label="ссылка для перехода на страницу HTML академии">
-       <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="" height="">
+       <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="115px" height="41px">
      </a>
    </p>
   </div>

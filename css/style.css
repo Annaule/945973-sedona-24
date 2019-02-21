@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff
+}
+a {
+  text-decoration: none;
+}
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000 ;
+
+  background-color: #ffffff;
+}
+.site-navigation {
+  list-style: none;
+}
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #8fb8d6;
+}
+.site-navigation a:active {
+  color: #cacaca;
+}
+article.Sedona-welcome {
+  background-image: url("img/background-photo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.Sedona-adventages {
+  text-align: center;
+}
+
+.Sedona-adventages h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.Sedona-adventages p {
+    color:#333333;
+}
+
+.hotels-search {
+  text-align: center;
+}
+
+.hotels-search h3 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.hotels-search p {
+  font-size: 14px;
+  line-height: 24px;
+
+  color:#333333;
+}
+.hotels-search form {
+  width: 568px;
+  height:483px;
+  margin: 0 auto;
+}
+
+.search-form-name {
+  width: 568px;
+  height: 86px;
+  background-color: #766357;
+
+  font-size: 21px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+
+  color: #ffffff;
+}
+.search-form-name:hover,
+.search-form-name:focus {
+  background-color: #604e44;
+}
+.search-form-name:active {
+  background-color: #503e32;
+  color: #928982;
+}
+.date-item label {
+  font: inherit;
+  text-align: left;
+  margin-right: 5px;
+}
+.date-item input {
+  font: inherit;
+  width: 346px;
+  height: 38px;
+  background-color: #f2f2f2;
+}
+.date-item input:hover {
+  background-color: #ebebeb;
+}
+.date-item input:focus {
+  background-color: #ffffff;
+  border-color: #ebebeb;
+}
+.calendar-button {
+  width: 38px;
+  height:38px;
+  background-color: #f2f2f2;
+  color: #a8a8a8;
+}
+.calendar-button:hover,
+.calendar-button:focus {
+  background-color: #ebebeb;
+  color: #000000;
+}
+.calendar-button:active {
+  background-color: #ffffff;
+  color: #80b2d3;
+}
+.visitors-count label {
+  text-align: left;
+}
+.visitors-count input {
+  font-size: 21px;
+  width: 38px;
+  height: 38px;
+  margin:0;
+}
+.visitors-count button {
+  width: 38px;
+  height: 38px;
+  font-size: 21px;
+  color: #a8a8a8;
+}
+.visitors-count button:hover,
+.visitors-count button:focus {
+  color: #000000;
+}
+.visitors-count button:active {
+  color: #80b2d3;
+}
+.hotels-search-button {
+  font-size: 21px;
+  width: 458px;
+  height: 58px;
+  background-color: #81b3d2;
+  border: none;
+  margin: 5px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.hotels-search-button:hover,
+.hotels-search-button:focus {
+  background-color: #669ebf;
+}
+.hotels-search-button:active {
+    background-color: #5596be;
+    color: #95b9d3;
+}
+.mapofsedona img {
+  margin: 0 auto;
+}
+.hashtag {
+  font-size: 21px;
+}
+.social-buttons ul {
+   list-style: none;
+}
+.social-buttons li {
+  width: 46px;
+  height: 48px;
+  text-align: center;
+
+  margin: 5px;
+  object-fit: contain;
+  background-color: #81b3d2;
+}
+.social-buttons img {
+  vertical-align: middle;
+  padding-top: 15px;
+}
+.logo-button:hover,
+.logo-button:focus {
+
+}
+.list-of-hotels ul {
+  list-style: none;
+}
+.list-of-hotels li{
+  color: #333333;
+  text-align: left;
+  font-weight: normal;
+
+}
+.nameofthehotel {
+  font-size: 21px;
+  font-weight: bold;
+}
+.nameofthehotel:hover,
+.nameofthehotel:focus {
+  color: #82b3d3;
+}
+.nameofthehotel:active {
+  color: #cacaca;
+}
+.button-abouthotel {
+  width: 110px;
+  height: 27px;
+  background-color: #82b3d3;
+
+  text-align: center;
+  vertical-align: middle;
+  font-weight: normal;
+  font-size: 14px;
+  color: #ffffff;
+}
+.button-abouthotel a{
+  font-size: 14px;
+}
+.button-abouthotel:hover,
+.button-abouthotel:focus {
+  background-color: #669ebf;
+}
+.button-abouthotel:active {
+  background-color: #5596be;
+  color: #94b9d3;
+}
+.button-book {
+  width: 142px;
+  height: 27px;
+  background-color: #766357;
+
+  color: #ffffff;
+}
+.button-book a {
+  font-size: 14px;
+}
+.button-book:hover,
+.button-book:focus {
+  background-color: #604e44;
+}
+.button-book:active {
+  background-color: #503e32;
+  color: #94b9d3;
+}
+.rating {
+  width: 110px;
+  height: 27px;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  text-align: center;
+  color: #666666;
+}
