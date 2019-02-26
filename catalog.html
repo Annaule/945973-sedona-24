@@ -10,13 +10,13 @@
   </head>
   <body>
 <header class="main-header">
-    <a class="main-header-logo" href="index.html">
-    <img src="img/logo-sedona.svg" alt="Логотип штата" width="150px" height="71px">
-  </a>
   <nav class="main-navigation">
     <ul class="site-navigation">
       <li><a href="info.html">Информация</a></li>
       <li><a href="photo.html"> Фото и видео</a></li>
+      <li><a class="main-header-logo" href="index.html">
+      <img src="img/logo-sedona.svg" alt="Логотип штата" width="150px" height="71px">
+      </a></li>
       <li><a href="map.html"> Карта штата</a></li>
       <li><a href="#">Гостиницы</a></li>
     </ul>
@@ -24,56 +24,96 @@
 </header>
 <main>
   <section class="list-of-hotels">
-  <ul>
-    <li><a href="#amararesort">
+  <div class="hotel-contaner">
+   <div class="hotel-line hotel-foto"><a href="#amararesort">
        <img src="img/amararesort.jpg" width="135px" height="90px" alt="Фото отеля Амара">
-       </a>
-    <p class="nameofthehotel">Amara Resort & Spa </p><br> Гостиница от 4000р<br>
+     </a>
+   </div>
+   <div class="hotel-line hotel-info">
+    <p class="nameofthehotel">Amara Resort & Spa </p>
+    <div class="hotel-info-wrapper">
+    <p class="hotel-type">Гостиница</p>
+    <p class="hotel-price"> от 4000р</p>
+    </div>
+    <div class="buttons-wrapper">
     <a class="button-abouthotel" href="#amararesort">Подробнее</a>
     <a class="button-book" href="#booking">Забронировать</a>
-    <img src="img/star.svg" width="18px" height="17px" alt="Количество звезд"><br>
-    <p class="rating">Рейтинг:8.5</p>
-  </li>
-    <li><a href="#desertquailinn">
+   </div>
+   </div>
+   <div class="hotel-line hotel-rating">
+    <img src="img/star.svg" width="18px" height="17px" alt="Количество звезд">
+    <p class="rating">Рейтинг: 8.5</p>
+   </div>
+  </div>
+
+  <div class="hotel-contaner">
+   <div class="hotel-line hotel-foto"><a href="#desertquailinn">
        <img src="img/desertquailinn.jpg" width="135px" height="90px" alt="Фото отеля Desert quail inn">
        </a>
-    <p class="nameofthehotel">Desert Quail Inn </p><br> Мотель от 3000р<br>
+   </div>
+    <div class="hotel-line hotel-info">
+    <p class="nameofthehotel">Desert Quail Inn</p>
+    <div class="hotel-info-wrapper">
+    <p class="hotel-type">Мотель</p>
+    <p class="hotel-price">от 3000р</p>
+    </div>
+    <div class="buttons-wrapper">
     <a class="button-abouthotel" href="#desertquailinn">Подробнее</a>
     <a class="button-book" href="#booking">Забронировать</a>
-    <img src="img/star.svg" width="18px" height="17px" alt="Количество звезд"><br>
-    <p class="rating">Рейтинг:8.9</p>
-    </li>
-    <li><a href="#villasatpocodiablo">
+  </div>
+   </div>
+   <div class="hotel-line hotel-rating">
+    <img src="img/star.svg" width="18px" height="17px" alt="Количество звезд">
+    <p class="rating">Рейтинг: 8.9</p>
+   </div>
+ </div>
+ <div class="hotel-contaner">
+    <div class="hotel-line hotel-foto"><a href="#villasatpocodiablo">
         <img src="img/villasatpocodiablo.jpg" width="135px" height="90px" alt="Фото отеля
         villas at pocodiablo">
         </a>
-    <p class="nameofthehotel">Villas at Poco Diablo</p><br> апартаменты от 2000р<br>
-    <a class="button-abouthotel" href="#villasatpocodiablo">Подробнее</a>
-    <a class="button-book" href="#booking">Забронировать</a>
-    <img src="img/star.svg" width="18px" height="17px" alt="Количество звезд"><br>
-    <p class="rating">Рейтинг:9.2</p>
-    </li>
-    </ul>
+    </div>
+    <div class="hotel-line hotel-info">
+    <p class="nameofthehotel">Villas at Poco Diablo</p>
+     <div class="hotel-info-wrapper">
+     <p class="hotel-type">Апартаменты</p>
+     <p class="hotel-price">от 2000р</p>
+     </div>
+     <div class="buttons-wrapper">
+     <a class="button-abouthotel" href="#villasatpocodiablo">Подробнее</a>
+     <a class="button-book" href="#booking">Забронировать</a>
+  </div>
+   </div>
+   <div class="hotel-line hotel-rating">
+    <!--<img src="img/star.svg" width="18px" height="17px" alt="Количество звезд">-->
+    <div class="starpic"><img src="img/star.svg" width="18px" height="17px"
+      alt="Количество звезд">
+    </div>
+    <div class="rating">Рейтинг: 9.2</div>
+   </div>
+ </div>
     </section>
   </main>
   <footer class="main-footer">
-    <p class="hashtag">#visitSEDONA</p>
-    <div class="social-buttons">
-      <ul>
-        <li><a class="social-button" href="#" style="background-color:#81b3d2" aria-label="Седона на фэйсбуке">
-          <img src="img/fb-icon.svg" width="" height="" alt="иконка фейсбука"/></a></li>
-        <li><a class="social-button" href="#" style="background-color:#81b3d2" aria-label="Седона в твитере">
-          <img src="img/twitter.svg" width="" height="" alt="иконка твитера"/></a></li>
-        <li><a class="social-button" href="#" style="background-color:#81b3d2" aria-label="Седона на ютюбе">
-          <img src="img/youtube.svg" width="" height="" alt="иконка ютюба"/></a></li>
+    <div class="hashtag"><p>#visitSEDONA</p></div>
+    <div class="social-buttons-wraper">
+      <ul class="social-buttons">
+        <li><a href="#" aria-label="Седона на фэйсбуке">
+          <img src="img/fb-icon.svg" width="12px" height="22px" alt="иконка фейсбука"/></a></li>
+        <li><a href="#" aria-label="Седона в твитере">
+          <img src="img/twitter.svg" width="17px" height="15px" alt="иконка твитера"/></a></li>
+        <li><a href="#" aria-label="Седона на ютюбе">
+          <img src="img/youtube.svg" width="20px" height="16px" alt="иконка ютюба"/></a></li>
       </ul>
-      <p class="footer-copyright">
-       <b>Website by:</b> <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"
-       aria-label="ссылка для перехода на страницу HTML академии">
-         <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="115px" height="41px">
-       </a>
-     </p>
     </div>
+    <div class="footer-copyright">
+      <div><b>Website by:</b></div>
+      <div><a class="logo-button" href="https://htmlacademy.ru/intensive/htmlcss"
+       aria-label="ссылка для перехода на страницу HTML академии">
+      <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="115px" height="41px">
+       </a>
+     </div>
+   </div>
   </footer>
 </body>
 </html>
