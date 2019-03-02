@@ -6,17 +6,19 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic"
     rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
 <header class="main-header">
   <nav class="main-navigation">
-    <ul class="site-navigation">
+    <ul class="site-navigation site-navigation-left">
       <li><a href="info.html">Информация</a></li>
       <li><a href="photo.html"> Фото и видео</a></li>
-      <li><a class="main-header-logo" href="index.html">
-      <img src="img/logo-sedona.svg" alt="Логотип штата" width="150px" height="71px">
-      </a></li>
+    </ul>
+    <a class="main-header-logo" href="index.html">
+    <img src="img/logo-sedona.svg" alt="Логотип штата" width="150px" height="71px">
+    </a>
+    <ul class="site-navigation site-navigation-right">
       <li><a href="#mapofsedona"> Карта штата</a></li>
       <li><a href="catalog.html">Гостиницы</a></li>
     </ul>
@@ -24,18 +26,23 @@
 </header>
 <main>
   <article class="sedona-welcome">
-    <img src="img/background-photo.jpg" width="1200px" height="800px" alt="Фото Седоны">
-    <div class="polygon"><img src="img/polygon.svg" width="1200px" height="59px" alt="Полигон декоративный элемент">
-    <div class="welcome-pic"><img src="img/welcome.png" width="459px" height="353px"
+    <div class="sedona-foto">
+    </div>
+    <div class="polygon">
+    </div>
+    <div class="welcome-pic">
+    <img src="img/welcome.png" width="459px" height="353px"
     alt="Приветствие: Welcome to the gorgeous Sedona Because the grand Canyon sucks">
     </div>
   </article>
-  <section class="sedona-adventages">
+
+    <div class="reasons-title">
     <h2 class="visually-hidden">Преимущества города Седона</h2>
-    <h3> Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
+    <h3> Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h3>
     <p class="sedona-text-black">Рассмотрим 5 причин, по которым Седона круче,
       чем Гранд каньон!</p>
-    </section>
+    </div>
+   <section class="sedona-adventages">
       <section class="first-adventage"><p class="adventage-title-white">Настоящий городок </p>
          <br> <span class="adventage-number"> — №1 — </span><br>
          <p class="sedona-text-white">Седона - не атракцион для туристов, там течет своя жизнь</p>
@@ -81,65 +88,67 @@
        и толпится там</p>
      </li>
   </section>
+</section>
 
-  <section class="hotels-search">
+<section class="hotels-search-wrapper">
+  <div class="hotels-search-title">
     <h3 class="section-title">Заинтерисовались?</h3>
-    <p class="sedona-text-black">Укажите предполагаемые даты поездки,
+    <p class="sedona-text-black">Укажите предполагаемые даты поездки,<br>
      и мы покажем вам лучшие предложения гостиниц в седоне</p>
-<button type="submit" class="search-form-name">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+  </div>
+  <button type="submit" class="search-form-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+<div class="modal modal-hotels-search">
 <form class="hotels-search" method="post" action="https://echo.htmlacademy.ru">
-<fieldset>
-<div class="form-wrapper">
- <div class="date-item">
-  <label for="arrival-date">Дата заезда:</label>
-    <input type="text" name="dateofaarival" id="arrival-date" value="24 апреля 2017">
-    <button class="calendar-button"> <img src="img/calendar.svg" width="21px" heigh="22px"
-      alt="иконка календаря">
-    </button>
- </div> <br>
- <div class="date-item">
-  <label for="departure-date">Дата выезда:</label>
+  <div class="form-wrapper">
+    <div class="date-item">
+      <label for="arrival-date">Дата заезда:</label>
+      <div class="date-item-contaner">
+      <input type="text" name="dateofaarival" id="arrival-date" value="24 апреля 2017">
+      <button class="calendar-button"></button>
+      </div>
+    </div>
+   <div class="date-item">
+    <label for="departure-date">Дата выезда:</label>
+    <div class="date-item-contaner">
     <input type="text" name="dateofdeparture" id="departure-date" value="4 июля 2017">
-    <button class="calendar-button"> <img src="img/calendar.svg" width="21px" heigh="22px"
-      alt="иконка календаря">
-    </button>
- </div> <br>
- <div class="visitors-count-wrapper">
- <div class="visitors-count">
-  <label for="adults-count">Взрослые:</label>
+    <button class="calendar-button"></button>
+    </div>
+   </div>
+   <div class="visitors-count-wrapper">
+    <div class="visitors-count">
+    <label for="adults-count">Взрослые:</label>
     <button type="submit" name="adultsminuscount">-</button>
     <input type="text" name="numberofadults" id="adults-count">
     <button type="submit" name="adultspluscount">+</button>
- </div>
- <div class="visitors-count">
-  <label for="childrens-count">Дети:</label>
+    </div>
+    <div class="visitors-count">
+    <label for="childrens-count">Дети:</label>
     <button type="submit" name="childrensminuscount">-</button>
     <input type="text" name="numberofchildrens" id="childrens-count">
     <button type="submit" name="childrensspluscount">+</button>
+    </div>
+   </div>
  </div>
-</div>
-</div>
-<br>
   <button class="hotels-search-button" type="submit">Найти</button>
 </div>
-</fieldset>
 </form>
-  </section>
+</div>
+</section>
+
   <section class="mapofsedona">
-    <img src="img/mapofsedona.jpg" width="1200" height="593" alt="Карта города Седона">
+    <span class="visually-hidden">Седона на карте</span>
   </section>
 </main>
+
 <footer class="main-footer">
   <div class="hashtag"><p>#visitSEDONA</p></div>
-  <div class="social-buttons-wraper">
-    <ul class="social-buttons">
-      <li><a href="#" aria-label="Седона на фэйсбуке">
-        <img src="img/fb-icon.svg" width="12px" height="22px" alt="иконка фейсбука"/></a></li>
-      <li><a href="#" aria-label="Седона в твитере">
-        <img src="img/twitter.svg" width="17px" height="15px" alt="иконка твитера"/></a></li>
-      <li><a href="#" aria-label="Седона на ютюбе">
-        <img src="img/youtube.svg" width="20px" height="16px" alt="иконка ютюба"/></a></li>
-    </ul>
+  <div class="social-buttons">
+   <a class="social social-fb" href="#" aria-label="Седона на фэйсбуке">
+   <img src="img/fb-icon.svg" width="12px" height="22px" alt="иконка фейсбука"/></a>
+   <a class="social social-tw" href="#" aria-label="Седона в твитере">
+   <img src="img/twitter.svg" width="17px" height="15px" alt="иконка твитера"/></a>
+   <a class="social social-yt" href="#" aria-label="Седона на ютюбе">
+   <img src="img/youtube.svg" width="20px" height="16px" alt="иконка ютюба"/></a>
   </div>
   <div class="footer-copyright">
     <div><b>Website by:</b></div>
@@ -151,5 +160,5 @@
  </div>
 </footer>
 
-  </body>
+</body>
 </html>
