@@ -6,7 +6,7 @@
   <title>HTML Academy: Седона Каталог</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo.html"> Фото и видео</a></li>
         </ul>
-        <a href="index.html">
+        <a class="main-logo" href="index.html">
           <img class="main-header-logo" src="img/logo-sedona.svg" alt="Логотип штата" width="150" height="71">
         </a>
         <ul class="site-navigation site-navigation-right">
@@ -26,40 +26,45 @@
         </ul>
       </nav>
     </header>
+
     <main>
       <section class="hotels-filter">
         <form class="filter-range-form" method="post" action="https://echo.htmlacademy.ru">
           <div class="filter-contaner">
             <div class="checkboxes-wrapper">
-              <div class="checkboxes infrustructure">
+              <div class="infrustructure">
                 <p>Инфраструктура:</p>
-                <label class="choose-checkbox">
-                  <input type="checkbox" name="swimmingpull" class="visually-hidden" checked>
-                  <span class="checkbox-indicator"></span> Бассейн
-                </label>
-                <label class="choose-checkbox">
-                  <input type="checkbox" name="parking" class="visually-hidden">
-                  <span class="checkbox-indicator"></span> Парковка
-                </label>
-                <label class="choose-checkbox">
-                  <input type="checkbox" name="wifi" class="visually-hidden">
-                  <span class="checkbox-indicator"></span> Wi-Fi
-                </label>
+                <div class="checkboxes">
+                  <label class="choose-checkbox">
+                    <input type="checkbox" name="swimmingpull" class="visually-hidden" checked>
+                    <span class="checkbox-indicator"></span> Бассейн
+                  </label>
+                  <label class="choose-checkbox">
+                    <input type="checkbox" name="parking" class="visually-hidden">
+                    <span class="checkbox-indicator"></span> Парковка
+                  </label>
+                  <label class="choose-checkbox">
+                    <input type="checkbox" name="wifi" class="visually-hidden">
+                    <span class="checkbox-indicator"></span> Wi-Fi
+                  </label>
+                </div>
               </div>
-              <div class="checkboxes accomodation-type">
+              <div class="accomodation-type">
                 <p>Тип жилья:</p>
-                <label class="choose-checkbox">
-                  <input type="checkbox" name="hotel" class="visually-hidden" checked>
-                  <span class="checkbox-indicator"></span> Гостиница
-                </label>
-                <label class="choose-checkbox">
-                  <input type="checkbox" name="motel" class="visually-hidden" checked>
-                  <span class="checkbox-indicator"></span> Мотель
-                </label>
-                <label class="choose-checkbox">
-                  <input type="checkbox" name="apartments" class="visually-hidden" checked>
-                  <span class="checkbox-indicator"></span> Апартаменты
-                </label>
+                <div class="checkboxes">
+                  <label class="choose-checkbox">
+                    <input type="checkbox" name="hotel" class="visually-hidden" checked>
+                    <span class="checkbox-indicator"></span> Гостиница
+                  </label>
+                  <label class="choose-checkbox">
+                    <input type="checkbox" name="motel" class="visually-hidden" checked>
+                    <span class="checkbox-indicator"></span> Мотель
+                  </label>
+                  <label class="choose-checkbox">
+                    <input type="checkbox" name="apartments" class="visually-hidden" checked>
+                    <span class="checkbox-indicator"></span> Апартаменты
+                  </label>
+                </div>
               </div>
             </div>
 
@@ -96,14 +101,15 @@
       <div class="sorting-by-types">
         <p>Сортировка:</p>
         <ul class="sorting-types">
-          <li><a href="#">по цене</a></li>
+          <li class="active"><a href="#">по цене</a></li>
           <li><a href="#">по типу</a></li>
           <li><a href="#">по рейтингу</a></li>
         </ul>
       </div>
       <div class="sorting-buttons">
-        <a href="#" class="sorting-btn sorting-up">&#9650;</a>
-        <a href="#" class="sorting-btn sorting-down">&#9660;</a>
+        <p class="visually-hidden">кнопки сортировки вверх и вниз</p>
+        <a class="sorting-btn sorting-up" href="#">&#9650;</a>
+        <a class="sorting-btn sorting-down active" href="#">&#9660;</a>
       </div>
     </div>
   </section>
