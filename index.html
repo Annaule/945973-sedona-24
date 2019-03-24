@@ -6,24 +6,26 @@
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normilize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div class="shadow">
     <header class="main-header">
       <nav class="main-navigation">
-        <ul class="site-navigation site-navigation-left">
+        <a class="header-logo">
+          <img class="main-header-logo" src="img/logo-sedona.svg" alt="Логотип штата" width="150" height="71">
+        </a>
+        <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
-          <li><a href="photo.html">Фото и видео</a></li>
-        </ul>
-        <img class="main-header-logo" src="img/logo-sedona.svg" alt="Логотип штата" width="150" height="71">
-        <ul class="site-navigation site-navigation-right">
-          <li><a href="#mapofsedona">Карта штата</a></li>
+          <li><a href="photo.html"> Фото и видео</a></li>
+
+          <li><a href="#mapofsedona"> Карта штата</a></li>
           <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
       <section class="sedona-welcome">
       </section>
@@ -106,9 +108,10 @@
               <div class="date-item">
                 <label for="arrival-date">Дата заезда:</label>
                 <input type="text" name="dateofaarival" id="arrival-date" value="24 апреля 2017">
+                <span class="visually-hidden">кнопка календаря</span>
                 <button class="calendar-button">
-                  <span class="visually-hidden">кнопка календаря</span>
-                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve" fill="#cacaca">
+
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve" fill="#cacaca">
                     <g>
                       <path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
         		c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
@@ -133,9 +136,9 @@
               <div class="date-item">
                 <label for="departure-date">Дата выезда:</label>
                 <input type="text" name="dateofdeparture" id="departure-date" value="4 июля 2017">
-
+                <span class="visually-hidden">кнопка календаря</span>
                 <button class="calendar-button">
-                  <span class="visually-hidden">кнопка календаря</span>
+
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve" fill="#cacaca">
                     <g>
                       <path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
