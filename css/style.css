@@ -54,7 +54,7 @@ input[type="radio"].visually-hidden {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  height: 56px;
+  height: 72px;
 }
 
 .main-header-logo {
@@ -62,7 +62,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: -15px;
   margin-top: 0;
   width: 140px;
-  height: 71px;
+  height: 72px;
 }
 
 .main-navigation {
@@ -410,7 +410,7 @@ input[type="radio"].visually-hidden {
   right: 9px;
   width: 21px;
   height: 38px;
-vertical-align: middle;
+  vertical-align: middle;
   margin: 0;
   padding: 0;
   border: none;
@@ -674,7 +674,7 @@ vertical-align: middle;
 
 .filter-range {
   font-weight: 400;
-  min-width: 315px;
+  width: 314px;
 }
 
 .filter-range-title {
@@ -780,9 +780,9 @@ vertical-align: middle;
 .btn-transparent {
   box-sizing: border-box;
   display: block;
-  height: 33px;
+  height: 32px;
   width: 136px;
-  margin: 0 auto;
+  margin-left: 81px;
   padding: 3px 33px;
   font-size: 14px;
   line-height: 21px;
@@ -831,10 +831,12 @@ vertical-align: middle;
 .sorting-by-types {
   display: flex;
   align-items: center;
+  vertical-align: middle;
   text-align: left;
   width: 700px;
   font-size: 12px;
   line-height: 18px;
+  padding-top: 3px;
   font-weight: normal;
   margin-left: 49px;
 }
@@ -914,53 +916,62 @@ vertical-align: middle;
   justify-content: space-between;
   align-items: center;
   width: 1200px;
-  height: 150px;
+  height: 151px;
   padding-left: 72px;
   padding-right: 73px;
-  padding-top: 24px;
-  padding-bottom: 30px;
+  /*  padding-top: 27px;
+  padding-bottom: 30px;*/
   margin: 0 auto;
   border-top: 1px solid #e5e5e5;
 }
 
 .hotel-contaner:last-child {
+  min-height: 152px;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel-block {
   min-width: 670px;
-  height: 94px;
+  height: 90px;
   display: flex;
 }
 
 .hotel-foto {
-  height: 94px;
-  padding-top: 4px;
+  height: 90px;
 }
 
 .hotel-info-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   width: 600px;
-  height: 94px;
+  height: 90px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
   margin: 0;
+  padding: 0;
   margin-left: 30px;
+  margin-top: 0;
 }
 
 .nameofthehotel {
   text-align: left;
   font-size: 21px;
-  line-height: 26px;
+  /*line-height: 26px;*/
   font-weight: bold;
   color: #000000;
-  margin: 0;
-  /*margin-bottom: 3px;*/
+  margin-top: 0;
+  margin-bottom: 8px;
   padding: 0;
+}
+
+.nameofthehotel a {
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  height: 16px;
 }
 
 .nameofthehotel:hover,
@@ -978,7 +989,7 @@ vertical-align: middle;
 }
 
 .hotel-info {
-  height: 62px;
+  width: 110px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -986,19 +997,35 @@ vertical-align: middle;
 
 .hotel-info p {
   padding: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 14px;
 }
 
+/*
+.hotel-contaner:nth-child(2) .hotel-info p {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.hotel-contaner:nth-child(3) .hotel-info p {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+*/
 .hotel-booking {
-  height: 62px;
+  width: 142px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 8px;
+  margin-left: 6px;
 }
 
 .hotel-booking p {
   margin: 0;
+  padding-top: 0;
+  margin-bottom: 14px;
 }
 
 .button-hotel {
@@ -1043,7 +1070,7 @@ vertical-align: middle;
 
 .hotel-rating-contaner {
   width: 110px;
-  height: 92px;
+  height: 91px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1051,11 +1078,16 @@ vertical-align: middle;
 }
 
 .hotel-star {
+  display: flex;
   color: #82b3d3;
-  font-size: 19px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 21px;
   vertical-align: top;
-  /*text-align: right;*/
+  text-align: right;
+}
+
+.hotel-star span {
+  margin-left: 4px;
 }
 
 .rating {
@@ -1083,7 +1115,7 @@ vertical-align: middle;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 120px;
+  height: 120px;
 }
 
 .hashtag {
