@@ -406,10 +406,11 @@ input[type="radio"].visually-hidden {
 
 .calendar-button {
   position: absolute;
+  top: 0;
   right: 9px;
   width: 21px;
   height: 38px;
-  vertical-align: top;
+vertical-align: middle;
   margin: 0;
   padding: 0;
   border: none;
